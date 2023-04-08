@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+
+  <body>
+    <button id="setup">Setup</button>
+    <br />
+    <textarea id="status" style="width: 100%" rows="1" disabled></textarea>
+    <br />
+    <div class="chatDiv">
+
+      <textarea id="chatWindow" style="width: 100%" rows="20" disabled></textarea>
+      <!-- make the elements of the div horizontally arranged -->
+      <div style="display: flex;">
+        <button id="clearChat">Clear</button>
+        <input id="chatInput" type="text" />
+        <button id="sendChat">Send</button>
+      </div>
+
+    </div>
+
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>
