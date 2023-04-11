@@ -1,3 +1,118 @@
+/* Popup styling */
 body {
-    width: 30rem;
-  }
+  margin: 0;
+  padding: 10px;
+  /* width: 300px; */
+  height: 420px;
+  background-color: #F7F7F7;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.chatDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100%;
+}
+
+#chatWindow {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  height: 100%;
+}
+
+.chatEntry {
+  margin-bottom: 10px;
+}
+
+.bot .chatBubble {
+  background-image: linear-gradient(to bottom, #b788e8, #5f5aa2);
+  color: white;
+  border-radius: 15px;
+  max-width: 70%;
+  padding: 10px;
+  align-self: flex-start;
+}
+.user {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.user .chatBubble {
+  background-color: #E6E6E6;
+  border-radius: 15px;
+  max-width: 70%;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#chatInput {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  outline: none;
+}
+
+#clearChat, #sendChat {
+  padding: 10px;
+  background-color: #9f74b2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#clearChat:hover, #sendChat:hover {
+  opacity: 0.8;
+}
+.setup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setup input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d1d1d6;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+.setup button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #9f74b2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.setup button:hover {
+  opacity: 0.8;
+}
