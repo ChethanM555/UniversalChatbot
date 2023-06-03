@@ -3,8 +3,17 @@
 ## Introduction
 The Universal Chatbot is a powerful web extension designed to enhance your online conversations by augmenting them with real-time information from the webpages you're currently viewing. By leveraging the capabilities of a retriever augmented chatbot and advanced natural language processing techniques, this tool provides accurate and grounded responses tailored to the content of the active webpage.
 
-## Features:
+## Architecture:
+Here is the high level architecture of the system.
 
+![Architecture](images/universal_chatbot_architecture.png "architecture")
+
+## Demo:
+Here is a demo of the system.
+
+![Demo](images/universal_chatbot.png "demo")
+
+## Features:
 1. Webpage Scraping: Once installed, the web extension automatically scrapes the data from the current webpage, capturing relevant information that can be utilized during conversations.
 2. Backend Server and Knowledge Base: The scraped data is sent to a backend server where the Langchain library is employed to break the information into chunks, generate embeddings, and construct a real-time knowledge base.
 3. Augmented Questioning: When you pose a question while using the chatbot, the system augments your query with content from the active webpage, ensuring the response is contextually relevant and precise.
